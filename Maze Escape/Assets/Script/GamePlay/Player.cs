@@ -125,7 +125,7 @@ public class Player : MonoBehaviour
             lastTeleportTime = Time.time; // Cập nhật thời gian teleport
 
             StopAllCoroutines(); // Dừng mọi coroutine di chuyển đang diễn ra
-
+            SoundManager.Instance.PlayVFXSound(2);
             // Teleport Player đến điểm đến mới
             TeleportPlayer(collision.gameObject);
         }
@@ -133,11 +133,14 @@ public class Player : MonoBehaviour
         {
             currentItemCount++;
             Destroy(collision.gameObject);
+            SoundManager.Instance.PlayVFXSound(0);
         }
         else if (collision.gameObject.CompareTag("Sword"))
         {
             if (CanTakeSword)
             {
+                SoundManager.Instance.PlayVFXSound(1);
+                LVManager.Instance.SaveGame();
                 StartCoroutine(EndGame());
             }
         }
@@ -161,8 +164,7 @@ public class Player : MonoBehaviour
             CanMove = true;
             // Bắt đầu coroutine để reset trạng thái teleport sau một thời gian chờ
             StartCoroutine(AllowTeleportAfterCooldown());
-
-            Debug.Log("Player teleported to new location.");
+            
         }
     }
 
@@ -183,7 +185,6 @@ public class Player : MonoBehaviour
         if (collision.gameObject.CompareTag("TelePort"))
         {
             hasLeftTeleportZone = true;
-            Debug.Log("Player has left the teleport zone.");
         }
     }
 

@@ -39,6 +39,7 @@ public class GamePlay : UICanvas
     {
         Time.timeScale = 0;
         UIManager.Instance.OpenUI<GamePause>();
+        SoundManager.Instance.PlayClickSound();
     }
     private void UpdateLevelText()
     {

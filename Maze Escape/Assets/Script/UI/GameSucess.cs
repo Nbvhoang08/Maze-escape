@@ -74,6 +74,7 @@ public class GameSucess : UICanvas
     public void SoundBtn()
     {
         SoundManager.Instance.TurnOn = !SoundManager.Instance.TurnOn;
+        SoundManager.Instance.PlayClickSound();
         UpdateButtonImage();
     }
     private void UpdateButtonImage()

@@ -73,3 +73,5 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 Maze Escape/Library
 Maze Escape/Logs
+Maze Escape/Build
+Maze Escape/Temp

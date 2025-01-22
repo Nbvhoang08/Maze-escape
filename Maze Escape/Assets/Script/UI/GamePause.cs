@@ -32,7 +32,7 @@ public class GamePause : UICanvas
     public void Resume()
     {
         Time.timeScale = 1;
-
+        SoundManager.Instance.PlayClickSound();
         UIManager.Instance.CloseUI<GamePause>(0.2f);
             
     }
@@ -54,6 +54,7 @@ public class GamePause : UICanvas
     {
         SoundManager.Instance.TurnOn = !SoundManager.Instance.TurnOn;
         UpdateButtonImage();
+        SoundManager.Instance.PlayClickSound();
     }
     private void UpdateButtonImage()
     {

@@ -8,5 +8,50 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Home.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/LV1.unity
+    guid: 1db4f3138bf67754cacbf69224bd20dd
+  - enabled: 1
+    path: Assets/Scenes/LV2.unity
+    guid: 24aceb19076b4234f81c13aad510df95
+  - enabled: 1
+    path: Assets/Scenes/LV3.unity
+    guid: 79238292cc058ea4688a61cbb43e310d
+  - enabled: 1
+    path: Assets/Scenes/LV4.unity
+    guid: 63f8fc8ef52b8ea438f18b1c14de9cc4
+  - enabled: 1
+    path: Assets/Scenes/LV5.unity
+    guid: a37423b7b6d1b8c4a8fb1c43264c2c0d
+  - enabled: 1
+    path: Assets/Scenes/LV6.unity
+    guid: 75593a3d2240b3741808f71effe82407
+  - enabled: 1
+    path: Assets/Scenes/LV7.unity
+    guid: 4f659c9efe6d1f443ad0b15892a3cf41
+  - enabled: 1
+    path: Assets/Scenes/LV8.unity
+    guid: 1bbcc7db0eb77e34c9589154c9a3d394
+  - enabled: 1
+    path: Assets/Scenes/LV9.unity
+    guid: 542cb3108600f5640b0913e889689f8d
+  - enabled: 1
+    path: Assets/Scenes/LV10.unity
+    guid: 4a8cc47373c462b4993a8aa78cf1d83d
+  - enabled: 1
+    path: Assets/Scenes/LV11.unity
+    guid: b260bcc133ab98940bacdedb00bae695
+  - enabled: 1
+    path: Assets/Scenes/LV12.unity
+    guid: 2e22489235c8bf14495bff2645e60527
+  - enabled: 1
+    path: Assets/Scenes/LV13.unity
+    guid: d9dd38de42bd9304abbbdf3c51803ec6
+  - enabled: 1
+    path: Assets/Scenes/LV14.unity
+    guid: 1c018944d69f11344b46e927e0918e50
+  - enabled: 1
+    path: Assets/Scenes/LV15.unity
+    guid: fe58b5ed41db36c4fbfab890c620bffc
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: ebe3a641c00c8564d9efd54f3d7ad351, type: 2}

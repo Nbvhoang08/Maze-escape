@@ -145,7 +145,7 @@ public class ChooseLV : UICanvas
         yield return new WaitForSeconds(delay);
         float duration = 0.3f;
         float elapsed = 0f;
-        //SoundManager.Instance.PlayVFXSound(2);
+
         while (elapsed < duration)
         {
             elapsed += Time.deltaTime;
@@ -164,7 +164,7 @@ public class ChooseLV : UICanvas
     {
         if (levelIndex >= 0 && levelIndex < levels.Count && levels[levelIndex].isUnlocked)
         {
-            ///SoundManager.Instance.PlayClickSound();
+            SoundManager.Instance.PlayClickSound();
             StartCoroutine(LoadLevelSequence(levelIndex));
         }
     }

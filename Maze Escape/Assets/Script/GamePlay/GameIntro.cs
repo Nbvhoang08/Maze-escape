@@ -16,6 +16,7 @@ public class GameIntro : MonoBehaviour
     void Start()
     {
         StartCoroutine(StartGame());
+        SoundManager.Instance.PlayVFXSound(3);
     }
     IEnumerator StartGame()
     {
